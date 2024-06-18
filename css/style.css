@@ -1,4 +1,29 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0px;
+}
+/*ony for large screens*/
+@media screen and (min-width: 767px) {
+  .container {
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: auto;
+    border-style: solid;
+  }
+  .navbar {
+    display: grid;
+    grid-template-columns: 50px auto 50px 50px 50px;
+  }
+  .item {
+    background-color: #D2B8C1;
+    text-align: auto;
+    padding: 10px;
+    font-color: #8D3D36;
+  }
+}
+/*only for small screens*/
+@media screen and (max-width: 767px) {
+
+  }
+
 }
