@@ -27,7 +27,6 @@ html, body {
   .header {
     height: 500px;
     width: 100%;
-    background-color: red;
     background-image: url('../images/background_image.jpg');
     background-position: center;
     background-size: cover;
@@ -38,6 +37,14 @@ html, body {
     background-color: rgba(255, 255, 255, 0.7);
     width: 50%;
     margin: auto;
+    color: #8D3D36;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: auto 25% auto 25% auto;
+    height: 50%;
+    width: 100%;
+    background-color: #F4EAE6;
   }
 }
 /*only for small screens*/
