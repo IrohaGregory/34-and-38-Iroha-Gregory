@@ -35,16 +35,16 @@ html, body {
   }
   .card {
     background-color: rgba(255, 255, 255, 0.7);
-    width: 50%;
     margin: auto;
     color: #8D3D36;
   }
   .content {
     display: grid;
-    grid-template-columns: auto 25% auto 25% auto;
+    grid-template-columns: auto auto auto;
     height: 50%;
     width: 100%;
     background-color: #F4EAE6;
+    text-align: center;
   }
 }
 /*only for small screens*/
