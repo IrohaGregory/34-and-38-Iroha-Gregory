@@ -46,6 +46,12 @@ html, body {
     background-color: #F4EAE6;
     text-align: center;
   }
+  div#et {
+    margin-left: 20px;
+  }
+  div#read {
+    margin-right: 20px
+  }
 }
 /*only for small screens*/
 @media screen and (max-width: 767px) {
