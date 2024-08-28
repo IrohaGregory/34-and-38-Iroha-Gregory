@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0px;
 }
+
 /*ony for large screens*/
 @media screen and (min-width: 767px) {
   .container {
@@ -10,22 +12,27 @@ html, body {
     grid-template-columns: auto;
     border-style: solid;
   }
+
   .navbar {
     display: grid;
-    grid-template-columns: 50px auto 50px 50px 50px;
+    grid-template-columns: 50px auto 60px 69px 50px;
   }
+
   .item {
     background-color: #F4EAE6;
-    text-align: auto;
-    padding: 10px;
+    text-align: center;
     color: #8D3D36;
     border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+
   a {
     color: #8D3D36
   }
+
   .header {
-    height: 500px;
+    height: 300px;
     width: 100%;
     background-image: url('../images/background_image.jpg');
     background-position: center;
@@ -33,29 +40,77 @@ html, body {
     text-align: center;
     padding-top: 200px;
   }
+
   .card {
     background-color: rgba(255, 255, 255, 0.7);
     margin: auto;
     color: #8D3D36;
+    width: 90%;
   }
+
   .content {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     height: 50%;
     width: 100%;
     background-color: #F4EAE6;
     text-align: center;
+
+    .contenttext {
+      color: #F4EAE6;
+    }
   }
+
+  .button {
+    border: none;
+    background-color: #8D3D36;
+    font-family:;
+    color: #F4EAE6;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button:hover{
+    border-color: #8D3D36;
+    border-style: solid;
+    color: #8D3D36;
+    background-color: #F4EAE6;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+
+  footer {
+    height: 200px;
+    background-color: #8D3D36;
+    display: grid;
+  
+  }
+
+  .footerlink {
+    color: #F4EAE6;
+  }
+
   div#et {
     margin-left: 20px;
   }
+
   div#read {
     margin-right: 20px
   }
-}
-/*only for small screens*/
-@media screen and (max-width: 767px) {
 
+  div#headercard {
+    width: 50%;
+    border-style: solid;
+    border-color: #8D3D36;
   }
+}
+
+/*only for small screens*/
+@media screen and (max-width: 767px) {}
 
 }
