@@ -6,16 +6,10 @@ body {
 }
 
 /*ony for large screens*/
-@media screen and (min-width: 767px) {
-  .container {
-    grid-template-rows: 50px 1fr 1fr;
-    grid-template-columns: auto;
-    border-style: solid;
-  }
 
   .navbar {
     display: grid;
-    grid-template-columns: 50px auto 60px 69px 50px;
+    grid-template-columns: 50px auto 70px 73px 65px;
   }
 
   .item {
@@ -32,13 +26,14 @@ body {
   }
 
   .header {
-    height: 300px;
+    height: auto;
     width: 100%;
     background-image: url('../images/background_image.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .card {
@@ -46,11 +41,13 @@ body {
     margin: auto;
     color: #8D3D36;
     width: 90%;
+    border-style: solid;
+    
   }
 
   .content {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     height: 50%;
     width: 100%;
     background-color: #F4EAE6;
@@ -93,21 +90,26 @@ body {
   .footerlink {
     color: #F4EAE6;
     width: 150px;
+    margin-top: 30px;
   }
-
-  div#et {
-    margin-left: 20px;
-  }
-
-  div#read {
-    margin-right: 20px
-  }
-
+  
   div#headercard {
     width: 50%;
     border-style: solid;
     border-color: #8D3D36;
   }
+/*CONTENT FOR ETIQUETTE*/
+  div#bow {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+  }
+
+.bowimage {
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+}
 }
 
 /*only for small screens*/
@@ -115,7 +117,7 @@ body {
 
   .navbar {
     display: grid;
-    grid-template-columns: 50px auto 60px 69px 50px;
+    grid-template-columns: 50px auto 70px 73px 65px;
   }
 
   .item {
@@ -128,14 +130,12 @@ body {
   }
 
   .header {
-    height: 300px;
     width: 100%;
     background-image: url('../images/background_image.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 50px;
   }
 
   .card {
@@ -143,12 +143,14 @@ body {
     margin: auto;
     color: #8D3D36;
     width: 90%;
+    margin-top: 25px;
+    border-style: solid;
   }
 
   .content {
     display: grid;
     grid-template-columns: auto;
-    height: 60%;
+    height: 100%;
     width: 100%;
     background-color: #F4EAE6;
     text-align: center;
@@ -175,16 +177,24 @@ body {
   }
 
   div#headercard {
-    width: 75%;
+    width: 100%;
+    height: auto;
     border-style: solid;
     border-color: #8D3D36;
-    
   }
   
   footer {
-    height: 150px;
+    height: 200px;
     background-color: #8D3D36;
     display: grid;
+    margin-top: auto
+  }
+  
+  .footerlink {
+    color: #F4EAE6;
+    width: 120px;
+    margin-top: 30px;
   }
 
+  /***CONTENT FOR ETIQUETTE**/
 }
